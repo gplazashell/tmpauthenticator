@@ -56,7 +56,7 @@ class TmpAuthenticateHandler(BaseHandler):
         # BaseHandler.get_next_url ref: https://github.com/jupyterhub/jupyterhub/blob/4.0.0/jupyterhub/handlers/base.py#L646-L653
         #
         next_url = self.get_next_url(user)
-        self.redirect(next_url)
+        #self.redirect(next_url)
 
 
 class TmpAuthenticator(Authenticator):
