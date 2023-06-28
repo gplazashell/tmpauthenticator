@@ -101,6 +101,7 @@ class TmpAuthenticator(Authenticator):
         identifier (uuid).
         """
         username = str(uuid.uuid4())
+        username = username.replace("-","")
         return {
             "name": username,
         }
